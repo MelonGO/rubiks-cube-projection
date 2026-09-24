@@ -1,0 +1,23 @@
+{
+  "name": "rubiks-cube-projection",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node scripts/selfcheck.mjs",
+    "video:preview": "vite --open /video/",
+    "video:render": "node video/render.mjs"
+  },
+  "dependencies": {
+    "cubejs": "^1.3.2",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "p5": "^2.3.3",
+    "playwright": "^1.63.0",
+    "vite": "^8.3.1"
+  }
+}

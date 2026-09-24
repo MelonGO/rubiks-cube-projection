@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rubik's Cube 2D · Demo video</title>
+    <style>
+      html, body { margin: 0; background: #1d1b18; color: #eee; font: 13px system-ui, sans-serif; }
+      #stage canvas { display: block; }
+      body:not(.render) #stage canvas { width: min(100vw, calc((100vh - 48px) * 16 / 9)) !important; height: auto !important; margin: 0 auto; }
+      #controls { display: flex; gap: 12px; align-items: center; padding: 10px 16px; }
+      #controls input { flex: 1; }
+      body.render #controls { display: none; }
+    </style>
+  </head>
+  <body>
+    <script>
+      if (new URLSearchParams(location.search).has('render')) document.body.classList.add('render');
+    </script>
+    <div id="stage"></div>
+    <div id="controls">
+      <button id="play">Pause</button>
+      <input id="scrub" type="range" min="0" value="0" />
+      <span id="time">0.00 s</span>
+    </div>
+    <script type="module" src="./sketch.js"></script>
+  </body>
+</html>
