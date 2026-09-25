@@ -1,4 +1,4 @@
-# 二维魔方 (Rubik's Cube 2D)
+# 3x3 魔方的数学投影
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 

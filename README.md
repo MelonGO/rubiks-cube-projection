@@ -1,4 +1,4 @@
-# Rubik's Cube 2D
+# Mathematical projection of a 3x3 Rubik's Cube
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
